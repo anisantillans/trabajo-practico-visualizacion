@@ -1,0 +1,30 @@
+h1,
+h2,
+h3 {
+  font-family: Lato;
+  text-align: center;
+}
+
+.negrita {
+  font-weight: bold;
+}
+
+#app {
+  margin: 50px;
+}
+
+p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-size: large;
+}
+
+.grafico {
+  font-weight: bold;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+}

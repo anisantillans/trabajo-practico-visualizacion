@@ -1,0 +1,188 @@
+<div id="app">
+  <h1>Patrones en los restaurantes de los distritos de Lima - Perú</h1>
+  <p><span class="negrita">Nombre:</span> Ana Paula Santillan Sanchez</p>
+  <p>
+    <span class="negrita">Url:</span>
+    <a href="https://js-vnro38.stackblitz.io" target="_blank"
+      >https://js-vnro38.stackblitz.io</a
+    >
+  </p>
+  <p>
+    <span class="negrita">GitHub:</span>
+    <a href="https://js-vnro38.stackblitz.io" target="_blank"
+      >https://js-vnro38.stackblitz.io</a
+    >
+  </p>
+
+  <h2>Introducción</h2>
+  <p>
+    Cuando se ofrecen productos iguales en ubicaciones similares, la calidad del
+    servicio es el único factor que diferencia a los restaurantes. Los
+    restaurantes en su pretensión de satisfacer las expectativas del mercado y
+    las de sus clientes, procuran ofrecer productos y servicios de alta calidad
+    [1].
+  </p>
+  <p>
+    En muchos de los casos no se sabe cómo medir algo que, a priori, parece tan
+    intangible. Por consiguiente, en la situación actual de Lima hace que se
+    necesite toda la ayuda posible para dirigir los negocios de formas más
+    eficientes y rentables. Los restaurantes buscan mejorar sus menús,
+    incrementar ventas, optimizar sus programas de lealtad, así como tener más
+    acceso a la información de los competencia [2].
+  </p>
+  <p>
+    Los datos que se están utilizando para el presente trabajo, se emplearon en
+    los cursos previos de Estadística y Minería de datos, y han sido extraido de
+    Kaggle. El contenido cuenta con reseñas de restaurantes en los distritos de
+    Lima - Perú entre los años 2010 y 2021. Este tiene dos secciones generales.
+    El primero son los Restaurantes. Contiene información general y geoespacial.
+    El segundo son las reseñas. Este contiene la interacción entre usuario y
+    restaurante, de esta manera es posible ver la satisfacción del cliente con
+    un servicio.[3]
+  </p>
+  <h2>Audiencia</h2>
+  <p>
+    La audencia de este trabajo sería los dueños de restaurantes o personas
+    interesadas en los negocios de restaurantes.
+  </p>
+  <h2>Objetivo</h2>
+  <p>
+    Generar visualizaciones para obtener patrones en los restaurantes de los
+    distritos de Lima - Perú, según las calificaciones de los clientes.
+  </p>
+  <h2>Mensaje</h2>
+  <p>
+    Para el gráfico 1 se empleó la herramienta de Bar Chart con DataWrapper ya
+    que con el diagrama de barras se puede comparar facilmente el número de
+    restaurantes con excelentes calificaciones según los distritos de Lima. De
+    igual forma, los nombres de los distritos se pueden apreciar mejor en formal
+    horizontal.
+  </p>
+  <p>
+    En el gráfico 1 podemos concluir que el distrito de Miraflores, el que está
+    resaltado, es el top 1. Existen 2144 restaurantes en Miraflores que tienen
+    la mejor puntación según las reseñas de sus clientes. Así mismo, en el
+    gráfico 1 podemos apreciar los distritos con menor calificaciones
+    excelentes, como es el caso de Puente Piedra y Rimac.
+  </p>
+  <iframe
+    title="Restaurantes con mejor calificación según distrito de Lima"
+    aria-label="Bar chart"
+    id="datawrapper-chart-TZc84"
+    src="https://datawrapper.dwcdn.net/TZc84/3/"
+    scrolling="no"
+    frameborder="0"
+    style="width: 0; min-width: 100% !important; border: none"
+    height="865"
+    data-external="1"
+  ></iframe>
+  <script type="text/javascript">
+    !(function () {
+      'use strict';
+      window.addEventListener('message', function (a) {
+        if (void 0 !== a.data['datawrapper-height']) {
+          var e = document.querySelectorAll('iframe');
+          for (var t in a.data['datawrapper-height'])
+            for (var r = 0; r < e.length; r++)
+              if (e[r].contentWindow === a.source) {
+                var i = a.data['datawrapper-height'][t] + 'px';
+                e[r].style.height = i;
+              }
+        }
+      });
+    })();
+  </script>
+  <span class="grafico">Gráfico 1</span>
+
+  <p>
+    Para el gráfico 2 se empleó el gráfico de burbujas en un Symbol Map de
+    DataWrapper ya que permite visualizar los distritos con mejor puntación y
+    también la dispersión que hay en el mapa.
+  </p>
+  <p>
+    Realizando zoom al gráfico 2 podemos concluir que los distritos de
+    Miraflores y Barranco son los que tienen mayor calificación excelente y que
+    se encuentran muy próximos geograficamente.
+  </p>
+  <iframe
+    title="Distrito con mejor calificación"
+    aria-label="Mapa"
+    id="datawrapper-chart-jlgZo"
+    src="https://datawrapper.dwcdn.net/jlgZo/1/"
+    scrolling="no"
+    frameborder="0"
+    style="width: 0; min-width: 100% !important; border: none"
+    height="850"
+    data-external="1"
+  ></iframe>
+  <script type="text/javascript">
+    !(function () {
+      'use strict';
+      window.addEventListener('message', function (a) {
+        if (void 0 !== a.data['datawrapper-height']) {
+          var e = document.querySelectorAll('iframe');
+          for (var t in a.data['datawrapper-height'])
+            for (var r = 0; r < e.length; r++)
+              if (e[r].contentWindow === a.source) {
+                var i = a.data['datawrapper-height'][t] + 'px';
+                e[r].style.height = i;
+              }
+        }
+      });
+    })();
+  </script>
+  <span class="grafico">Gráfico 2</span>
+
+  <p>
+    Para el gráfico 3 se empleó el gráfico de barras múltiples con Google Sheet
+    ya que resulta sencillo comparar dos valores cuantitativos que es el caso
+    del precio mínimo y máximo de los restaurantes, con la variable cualitativa
+    que son los distritos. Primero se observa el precio mínimo de color azul,
+    seguido del precio máximo de color verde.
+  </p>
+  <p>
+    Es notablemente fácil observar los dos distritos con un precio máximo
+    elevado en sus restaurantes, que tiene el precio máximo de S/. 280. Así
+    mismo, encontramos varios distritos con un precio mínimo de S/. 3.
+  </p>
+  <iframe
+    width="963"
+    height="801"
+    seamless
+    frameborder="0"
+    scrolling="no"
+    src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTEullxHbmpfR8BOPcFwIqUJi-fcdREYXMTEs5WWU4Rj6pfGlXFyhto_Xu2lMq_vsi4T7xRGwourHsz/pubchart?oid=1498522826&amp;format=interactive"
+  ></iframe>
+  <span class="grafico">Gráfico 3</span>
+
+  <h2>Conclusión</h2>
+  <p>
+    El distrito de Miraflores es el que tiene mayor número de puntaciones
+    excelentes en sus restaurantes. Caso contrario sucede en los distritos de
+    Puente Piedra y Rimac. Así mismo, los distritos de Miraflores y Barranco
+    cuentan com mejor valoración según las reseñas de los clientes, y encuentran
+    muy próximos geograficamente. Todo lo antes mencionado cobra sentido del por
+    qué el distrito de Miraflores cuenta con el precio más elevado en los
+    servicios de los restaurantes.
+  </p>
+  <h2>Herramientas empleadas</h2>
+  <ul>
+    <li><p>Google Sheet: Gráfico de barras múltiples</p></li>
+    <li><p>DataWrapper: Bar Chart y Symbol Map</p></li>
+  </ul>
+  <h2>Referencias</h2>
+  <p>
+    [1] Y. L. Jireh Del Cid Catalán, “Calidad de los servicios y satisfacción
+    del cliente en el restaurante pizza burger diner, ubicado en la cabecera del
+    departamento de zacapa”, pp. 12-14, Enero 2018
+  </p>
+  <p>
+    [2] Tecnología Negocios Estrategia (TNE), “Como impulsa la inteligencia
+    artificial a los restaurantes”. Disponible: https://circulotne.com/como- se-
+    usa-la-inteligencia-artificial-en-los-restaurantes.html
+  </p>
+  <p>
+    [3] Lázaro, Ronald, “Peruvian Food Reviews”. Disponible:
+    https://www.kaggle.com/lazaro97/peruvian-food-reviews, 2021
+  </p>
+</div>
